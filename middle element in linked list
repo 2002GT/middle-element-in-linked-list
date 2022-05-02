@@ -1,0 +1,21 @@
+class Solution{
+    public:
+    
+    int getMiddle(Node *head)
+    {
+        // Your code here
+        Node*p = head;
+        Node*q = head;
+        
+        while(q){
+            q = q->next;
+            
+            if(q){
+                q=q->next;
+                p = p->next;
+            }
+        }
+    
+    return p->data;
+    }
+};
